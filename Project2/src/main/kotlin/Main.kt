@@ -53,13 +53,21 @@ fun main() {
     println("TASK 4")
     println("Please enter a channel number: ")
     var channel = Scanner(System.`in`).nextInt()
-    when(channel) {
-        0 -> "break"
-        1 -> println(arr[0])
-        2 -> println(arr[1])
-        3 -> println(arr[2])
-        4 -> println(arr[3])
-        5 -> println(arr[4])
-        else -> println("Please enter a number from 1 to 5")
+    var num = channel.toInt()
+
+    while(num != 0)
+    {
+        when(num) {
+            1 -> println(arr[0])
+            2 -> println(arr[1])
+            3 -> println(arr[2])
+            4 -> println(arr[3])
+            5 -> println(arr[4])
+            else -> println("Incorrect input")
+        }
+
+        println("Please enter a channel number: ")
+        channel = Scanner(System.`in`).nextInt()
+        num = channel.toInt()
     }
 }
