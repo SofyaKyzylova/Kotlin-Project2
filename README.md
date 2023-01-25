@@ -19,4 +19,4 @@ Use the switch statement and loops to implement a program that displays a menu:
 The user enters the number of the menu item in the console. 
 The first three items take the corresponding values in the console. 
 Calling the fourth item outputs to the console the summary information “Name: entered first name, Last name: entered last name, year of birth: entered year”. 
-When the zero point is called, the program shuts down.
+When the zero point is called, the program shuts down. 
